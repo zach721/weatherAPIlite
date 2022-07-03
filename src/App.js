@@ -14,8 +14,7 @@ const [time, setTime] = useState(null)
 const [temperature, setTemperature] = useState(null)
 const [weatherdescription, setWeatherdescription] = useState(null)
 const [humidity, setHumidity] = useState(null)
-const [day, setDay] = useState(null)
- 
+
   let api = "http://api.weatherstack.com/current?access_key=ff5c2d1c0f80f17921c879b46028d5fa&query="+cityname.toString()
 
 
@@ -32,7 +31,7 @@ const [day, setDay] = useState(null)
         setTemperature(res.data.current.temperature)
         setWeatherdescription(res.data.current.weather_descriptions)
         setHumidity(res.data.current.humidity)
-        setDay(res.data.current.is_day)
+      
         
         
             })
